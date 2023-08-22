@@ -171,16 +171,20 @@ footer .contact {
   color: var(--dark-color);
 }
 
-@media (max-width: 500px) {
+@media (max-width: 750px) {
   header {
     height: auto;
     grid-template-columns: 100dvw;
-    grid-template-rows: 100dvh 100dvh;
+    grid-template-rows: 100dvh 75dvh;
   }
 
   .about {
     padding: 2dvw 25px;
     align-items: center;
+  }
+
+  .about p {
+    font-size: .9rem;
   }
 
   .about .socials {
@@ -193,13 +197,21 @@ footer .contact {
     padding: 2dvw 25px;
   }
 
+
   .footer-wrapper {
     grid-template-columns: 100dvw;
     grid-template-rows: 1fr 1fr;
+    height: auto;
+    padding: 10px 10px;
+    gap: 10px;
   }
 
   .footer-content {
     padding: 0 25px;
+  }
+
+  .footer-content :not(h1) {
+    font-size: .9rem;
   }
 
   footer img {
