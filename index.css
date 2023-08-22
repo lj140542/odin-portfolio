@@ -170,3 +170,39 @@ footer .contact {
   text-decoration: none;
   color: var(--dark-color);
 }
+
+@media (max-width: 500px) {
+  header {
+    height: auto;
+    grid-template-columns: 100dvw;
+    grid-template-rows: 100dvh 100dvh;
+  }
+
+  .about {
+    padding: 2dvw 25px;
+    align-items: center;
+  }
+
+  .about .socials {
+    align-self: inherit;
+    gap: 2rem;
+    font-size: 2rem;
+  }
+
+  main {
+    padding: 2dvw 25px;
+  }
+
+  .footer-wrapper {
+    grid-template-columns: 100dvw;
+    grid-template-rows: 1fr 1fr;
+  }
+
+  .footer-content {
+    padding: 0 25px;
+  }
+
+  footer img {
+    width: 80dvw;
+  }
+}
